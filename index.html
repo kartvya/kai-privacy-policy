@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KAI - Privacy Policy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #222;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy for KAI</h1>
+    <p><strong>Effective Date:</strong> September 7, 2025</p>
+
+    <h2>Introduction</h2>
+    <p>KAI is a personal finance assistant designed with privacy as a core principle. 
+    The app helps you track expenses by analyzing financial SMS messages on your device and allowing you to add manual transactions with the help of an on-device AI model. 
+    Your data always stays on your device and is never sent to external servers.</p>
+
+    <h2>Information We Collect</h2>
+    <ul>
+      <li><strong>SMS Messages:</strong> KAI reads SMS messages only to detect financial transactions (such as bank alerts, UPI, or card transactions). Non-financial messages are ignored.</li>
+      <li><strong>Manual Input:</strong> If you choose to enter a transaction manually, the input is processed locally using a small on-device AI model to extract structured information (amount, type, merchant, etc.).</li>
+      <li><strong>App Settings:</strong> Certain preferences and metadata (like the date of the last processed message) are stored locally to improve efficiency.</li>
+    </ul>
+
+    <h2>How We Use the Information</h2>
+    <p>
+      - SMS messages are processed <strong>locally</strong> to extract and categorize financial transactions.<br/>
+      - Manual entries are parsed locally with AI (via the <em>Cactus</em> engine + GGUF model).<br/>
+      - Parsed data is stored in a local SQLite database on your device.<br/>
+      - No personal or financial information is uploaded, shared, or transmitted to any server.
+    </p>
+
+    <h2>Data Storage</h2>
+    <p>All SMS messages, parsed transactions, and app settings are stored locally on your device. 
+    The app does not create or use any online database or cloud storage. You may clear this data at any time by uninstalling the app or clearing its app data.</p>
+
+    <h2>Permissions Used</h2>
+    <ul>
+      <li><strong>READ_SMS & RECEIVE_SMS:</strong> Required to read transaction SMS for expense tracking.</li>
+      <li><strong>INTERNET & ACCESS_NETWORK_STATE:</strong> Used only for downloading AI model files or app updates. No personal data is transmitted online.</li>
+      <li><strong>WAKE_LOCK:</strong> Ensures expense tracking and background operations work reliably.</li>
+      <li><strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS:</strong> Keeps SMS processing and notifications active in the background.</li>
+    </ul>
+
+    <h2>AI and Cactus Integration</h2>
+    <p>
+      KAI includes a lightweight on-device AI assistant powered by <em>Cactus</em> and a small GGUF model. 
+      The AI runs entirely on your phone to help parse manual entries. No SMS or personal data is uploaded to remote servers as part of this process.
+    </p>
+
+    <h2>Third-Party Sharing</h2>
+    <p>KAI does not share, sell, or transfer your personal or financial data to any third parties.</p>
+
+    <h2>Security</h2>
+    <p>Your data remains on your device at all times. 
+    For additional security, you can use your device’s built-in protections (PIN, fingerprint, encryption, etc.).</p>
+
+    <h2>Your Control</h2>
+    <p>
+      - You may deny SMS permissions, but core expense tracking features will be limited.<br/>
+      - You may clear or delete all local data at any time by uninstalling the app.<br/>
+      - No data is retained by the developer once the app is removed from your device.
+    </p>
+
+    <h2>Changes to this Policy</h2>
+    <p>This Privacy Policy may be updated from time to time. 
+    Any changes will be reflected in the app and on the published Privacy Policy URL.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy, you can contact us at:</p>
+    <p><strong>Email:</strong> derivedlabs@gmail.com<br/>
+       <strong>Developer Name:</strong> Vishal Acharya</p>
+  </div>
+</body>
+</html>
